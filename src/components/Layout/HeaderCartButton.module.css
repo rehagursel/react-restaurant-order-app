@@ -1,0 +1,87 @@
+.button {
+  width: 20%;
+  min-width: 6.5rem;
+  max-width: 13rem;
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  background-color: #a3a3a367;
+  color: #e4e4e7;
+  padding: 0.4rem 0.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 20px;
+  font-weight: bold;
+  border:.8px solid #e4e4e7c5;
+  font-size:.8rem;
+}
+
+.button:hover,
+.button:active {
+  background-color: #e03e364b;
+  border:.8px solid #e03e36;
+}
+
+.button span{
+  font-family: 'Roboto', sans-serif;
+  font-weight:500;
+}
+
+.icon {
+  width: 1.35rem;
+  height: 1.35rem;
+  margin-right: .75rem;
+}
+
+.badge {
+  background-color: #E03E36;
+  padding: 0.25rem 1rem;
+  border-radius: 25px;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.button:hover .badge,
+.button:active .badge {
+  background-color: #fa1e13;
+}
+
+.bump {
+  animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (min-width: 600px) {
+  .button{
+    padding: 0.5rem 1.5rem;
+    font-size:1rem;
+    border-radius: 25px;
+    max-width:15rem;
+    min-width: 7.5rem;
+  }
+}
+
+@media (min-width: 450px ) and (max-width:600px) {
+  .button{
+    padding: 0.5rem 1rem;
+    min-width: 7rem;
+  }
+}

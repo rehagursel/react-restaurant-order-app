@@ -1,0 +1,29 @@
+.summary {
+  text-align: center;
+  max-width: 45rem;
+  width: 85%;
+  margin: -7.4rem auto;
+  position: relative;
+  background-color: #3838386b;
+  color: white;
+  border-radius: 14px;
+  padding: .5rem 1.5rem;
+  box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25);
+  font-size: .6rem;
+}
+
+.summary h2 {
+  font-size: 1rem;
+  margin-top: 0.3rem;
+}
+
+@media (min-width: 600px) {
+    .summary{
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .summary h2{
+        font-size: 1.5rem;
+    }
+  }
