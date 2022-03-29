@@ -1,12 +1,12 @@
 .increment {
   font: inherit;
   cursor: pointer;
-  background-color: #e03e36;
-  border: 1px solid #e03e36;
-  color: white;
   padding: 0 0.6rem;
   border-radius: 0.5rem;
   font-weight: bold;
+  background-color: #e03e36;
+  border: 1px solid #e03e36;
+  color: white;
 }
 
 .increment:hover,
@@ -18,16 +18,51 @@
 .decrement {
   font: inherit;
   cursor: pointer;
-  background-color: #ffffff;
-  border: 0.5px solid #0000007a;
-  color: black;
   padding: 0 0.6rem;
   border-radius: 0.5rem;
   font-weight: bold;
+  background-color: #ffffff;
+  border: 0.5px solid #0000007a;
+  color: black;
 }
 
 .decrement:hover,
 .decrement:active {
   background-color: #e2e2e2;
   border-color: #0000007a;
+}
+
+.cart-btn {
+  font: inherit;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #e03e36;
+  border: 1px solid #e03e36;
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
+  margin-left: 1rem;
+}
+
+.cart-btn:hover,
+.cart-btn:active {
+  background-color: #b8322b;
+  border-color: #b8322b;
+  color: white;
+}
+.cart-btn-close {
+  font: inherit;
+  cursor: pointer;
+  background-color: transparent;
+  color: #e03e36;
+  border: 1px solid #e03e36;
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
+  margin-left: 1rem;
+}
+
+.cart-btn-close:hover,
+.cart-btn-close:active {
+  background-color: #e03e36;
+  border-color: #e03e36;
+  color: white;
 }

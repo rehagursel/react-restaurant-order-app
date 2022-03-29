@@ -5,7 +5,7 @@ import classes from "./MealItemForm.module.css";
 const MealItemForm = (props) => {
   return (
     <form className={classes.form}>
-      <Button className="decrement">-</Button>
+      <Button className={('decrement')}>-</Button>
       <Input
         input={{
           id: "amount"+props.id,
@@ -16,7 +16,7 @@ const MealItemForm = (props) => {
           defaultValue: "1",
         }}
       />
-      <Button className="increment">+</Button>
+      <Button className={('increment')}>+</Button>
     </form>
   );
 };
