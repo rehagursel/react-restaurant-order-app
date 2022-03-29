@@ -1,0 +1,33 @@
+.increment {
+  font: inherit;
+  cursor: pointer;
+  background-color: #e03e36;
+  border: 1px solid #e03e36;
+  color: white;
+  padding: 0 0.6rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+
+.increment:hover,
+.increment:active {
+  background-color: #bb3129;
+  border-color: #bb3129;
+}
+
+.decrement {
+  font: inherit;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: 0.5px solid #0000007a;
+  color: black;
+  padding: 0 0.6rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+
+.decrement:hover,
+.decrement:active {
+  background-color: #e2e2e2;
+  border-color: #0000007a;
+}
