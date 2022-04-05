@@ -28,7 +28,7 @@ const MealItemForm = (props) => {
 
   return (
     <form className={classes.form} onSubmit={submitHandler}>
-      <Button className={"decrement"}>-</Button>
+     {/*  <Button className={"decrement"}>-</Button> */}
       <Input
         ref={amountInputRef}
         
