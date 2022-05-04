@@ -9,12 +9,22 @@ const MealItem = (props) => {
   const price = `$${props.price.toFixed(2)}`;
 
   const addToCartHandler = (amount) => {
-    cartCtx.addItem({
-      id: props.id,
-      name: props.name,
-      amount: amount,
-      price: props.price
-    });
+    if(amount > 1 ){
+      cartCtx.addMultiItem({
+        id: props.id,
+        name: props.name,
+        amount: amount,
+        price: props.price
+      });
+    } else {
+      cartCtx.addItem({
+        id: props.id,
+        name: props.name,
+        amount: amount,
+        price: props.price
+      });
+    }
+    
   };
   return (
     <li>

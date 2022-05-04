@@ -26,6 +26,30 @@
   color: black;
 }
 
+.submit {
+  font: inherit;
+  cursor: pointer;
+  padding: 0.2rem 0.6rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  font-weight: normal;
+  background-color: #ffffff;
+  border: 0.5px solid #0000007a;
+  color: black;
+}
+
+.submit:hover,
+.submit:active{
+  background-color: #e03e36d2;
+  border-color: #e03e36;
+  color:#ffffff;
+}
+
+.submit:disabled{
+  color:#e03e36;
+  border-color: #e03e36;
+}
+
 .decrement:hover,
 .decrement:active {
   background-color: #e2e2e2;
