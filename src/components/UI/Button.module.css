@@ -46,7 +46,8 @@
 }
 
 .submit:disabled{
-  color:green;
+  color:#e03e36;
+  border-color: #e03e36;
 }
 
 .decrement:hover,

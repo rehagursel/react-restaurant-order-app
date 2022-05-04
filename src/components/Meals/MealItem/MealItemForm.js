@@ -5,7 +5,6 @@ import Button from "../..//UI/Button";
 import classes from "./MealItemForm.module.css";
 
 const MealItemForm = (props) => {
-  const [amountIsValid, setAmountIsValid] = useState(true);
   const [amount, setAmount] = useState(1);
   const amountInputRef = useRef();
 
@@ -26,7 +25,6 @@ const MealItemForm = (props) => {
       enteredAmountNumber < 1 ||
       enteredAmount > 5
     ) {
-      setAmountIsValid(false);
       return;
     }
 
@@ -62,12 +60,7 @@ const MealItemForm = (props) => {
           +
         </Button>
       </form>
-      <Button
-       
-        className={"submit"}
-        type="button"
-        onClick={submitHandler}
-      >
+      <Button className={"submit"} type="button" onClick={submitHandler}>
         Add to Cart
       </Button>
     </React.Fragment>
