@@ -1,4 +1,4 @@
-import React, { useRef, useState, } from "react";
+import React, { useRef, useState } from "react";
 
 import Input from "../..//UI/Input";
 import Button from "../..//UI/Button";
@@ -9,21 +9,13 @@ const MealItemForm = (props) => {
   const [amount, setAmount] = useState(1);
   const amountInputRef = useRef();
 
-  
-
   const incrementHandler = () => {
-    setAmount((amount) => amount + 1);
+    if (amount < 5) setAmount((amount) => amount + 1);
   };
 
   const decrementHandler = () => {
-    setAmount((amount) => amount - 1);
-    console.log( "test1",amount)
+    if (amount > 1) setAmount((amount) => amount - 1);
   };
-
-  const inputChangeHandler = () => {
-    setAmount(amountInputRef.current.value)
-console.log("test",amountInputRef.current.value)
-  }
 
   const submitHandler = () => {
     const enteredAmount = amountInputRef.current.value;
@@ -53,7 +45,6 @@ console.log("test",amountInputRef.current.value)
         </Button>
         <Input
           ref={amountInputRef}
-          onChange= {inputChangeHandler}
           input={{
             id: "amount" + props.id,
             type: "number",
@@ -71,7 +62,12 @@ console.log("test",amountInputRef.current.value)
           +
         </Button>
       </form>
-      <Button disabled={!amountIsValid} className={"submit"} type="button" onClick={submitHandler}>
+      <Button
+       
+        className={"submit"}
+        type="button"
+        onClick={submitHandler}
+      >
         Add to Cart
       </Button>
     </React.Fragment>
